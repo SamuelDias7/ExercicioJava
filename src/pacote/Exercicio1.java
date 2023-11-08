@@ -6,14 +6,14 @@ import java.awt.event.ActionListener;
 import javax.swing.*;
 
 public class Exercicio1 {
-	JLabel l1,l2;
+	JLabel l1,l2,l3;
 	JTextField c1;
 	JPasswordField s1;
 	JButton b1;
 		
 	public Exercicio1() { 
 		
-		JFrame frame = new JFrame("TELA DE CADASTRO");
+		JFrame frame = new JFrame("TELA DE LOGIN");
 		frame.setLayout(null);
 
 		frame.setVisible(true);
@@ -25,6 +25,8 @@ public class Exercicio1 {
 		
 		l1 = new JLabel("Nome:");
 		l2 = new JLabel("Senha");
+		l3 = new JLabel("Informe usuario/senha");
+		
 		c1 = new JTextField();
 		s1 = new JPasswordField();
 		b1 = new JButton("Entrar");		
@@ -32,12 +34,15 @@ public class Exercicio1 {
 		
 		frame.add(l1);
 		frame.add(l2);
+		frame.add(l3);
 		frame.add(c1);
 		frame.add(s1);
 		frame.add(b1);
 		
 		l1.setBounds(50, 120, 150, 30);
 		l2.setBounds(50,170,150,30);
+		l3.setBounds(50,50,150,30);
+
 		c1.setBounds(100, 120, 200, 30);
 		s1.setBounds(100, 170, 200, 30);
 		b1.setBounds(120, 230, 150, 30);
@@ -52,6 +57,7 @@ public class Exercicio1 {
 				String s1v = s1.getText(); 
 				
 				if(c1v.equals("Samuel") & s1v.equals("123")) {
+					frame.setVisible(false);
 					new Exercicio2();
 					
 				}else {
@@ -67,6 +73,7 @@ public class Exercicio1 {
 	}
 
 	public static void main(String[] args) {
+		
 		new Exercicio1();
 	}
 

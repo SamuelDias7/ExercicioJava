@@ -6,7 +6,7 @@ import java.awt.event.ActionListener;
 import javax.swing.*;
 
 public class Exercicio2{
-	JLabel l1,l2,l3;
+	JLabel l1,l2,l3,l4;
 	JTextField c1,c2;
 	//JPasswordField s1;
 	JButton b1;
@@ -20,6 +20,7 @@ public class Exercicio2{
 		l1 = new JLabel("Nome:");
 		l2 = new JLabel("Idade:");
 		l3 = new JLabel("anos");
+		l4 = new JLabel("ENVIE SEUS DADOS");
 		
 		c1 = new JTextField();
 		c2 = new JTextField();
@@ -28,6 +29,7 @@ public class Exercicio2{
 		painel.add(l1);
 		painel.add(l2);
 		painel.add(l3);
+		painel.add(l4);
 		painel.add(c1);
 		painel.add(c2);
 		painel.add(b1);
@@ -35,6 +37,9 @@ public class Exercicio2{
 		l1.setBounds(50, 120, 150, 30);
 		l2.setBounds(50,170,150,30);
 		l3.setBounds(205,170,150,30);
+		l4.setBounds(50,170,150,30);
+		l4.setBounds(50,50,150,30);
+
 		
 		c1.setBounds(100, 120, 200, 30);
 		c2.setBounds(100, 170, 100, 30);
@@ -48,6 +53,7 @@ public class Exercicio2{
 				String c1aa = c1.getText();
 				String c2aa = c2.getText();
 								
+				frame.setVisible(false);
 				new Exercicio3(c1aa,c2aa);	
 			}
 			
