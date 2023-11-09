@@ -1,5 +1,6 @@
 package pacote;
 
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -18,6 +19,29 @@ public class Exercicio3 extends JFrame{
 	public Exercicio3(String nome, String idade) {		
 		
 		JPanel painel = new JPanel();
+
+		ImageIcon img = new ImageIcon(Exercicio3.class.getResource("sejaBemVindo.jpg"));		
+		JLabel label = new JLabel(img);		
+		
+		JPanel painelimg = new JPanel();
+		painelimg.setPreferredSize(new Dimension(400,400)); 
+		
+
+		
+		painelimg.setLayout(new GridLayout());
+		
+		img.setImage(img.getImage().getScaledInstance(400, 400, 1));
+		
+		painelimg.add(label);
+		//add(painelimg);
+		
+		add(painelimg);
+		
+
+
+		
+		
+		//importante
 		painel.setLayout(null);
 		
 		
@@ -60,14 +84,23 @@ public class Exercicio3 extends JFrame{
 		
 		
 		
-		
 		ActionListener acao = new ActionListener() {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
+				
 	
+				remove(painelimg);
+				
+				
+				
+				revalidate();
+				repaint();
+
 			add(painel);
 			revalidate();
+			
+			
 
 
 			}
@@ -110,8 +143,6 @@ public class Exercicio3 extends JFrame{
 			
 		};b1.addActionListener(acao4);
 
-		
-		
 		
 		}
 

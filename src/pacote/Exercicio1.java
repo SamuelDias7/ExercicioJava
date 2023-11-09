@@ -23,9 +23,9 @@ public class Exercicio1 {
 		frame.setDefaultCloseOperation(frame.EXIT_ON_CLOSE);
 		
 		
-		l1 = new JLabel("Nome:");
-		l2 = new JLabel("Senha");
-		l3 = new JLabel("Informe usuario/senha");
+		l1 = new JLabel("Usuario:");
+		l2 = new JLabel("Senha:");
+		l3 = new JLabel("INFORME USUARIO/SENHA");
 		
 		c1 = new JTextField();
 		s1 = new JPasswordField();
@@ -41,7 +41,7 @@ public class Exercicio1 {
 		
 		l1.setBounds(50, 120, 150, 30);
 		l2.setBounds(50,170,150,30);
-		l3.setBounds(50,50,150,30);
+		l3.setBounds(50,50,200,30);
 
 		c1.setBounds(100, 120, 200, 30);
 		s1.setBounds(100, 170, 200, 30);
@@ -56,6 +56,7 @@ public class Exercicio1 {
 				String c1v = c1.getText();
 				String s1v = s1.getText(); 
 				
+				//Autenticacao
 				if(c1v.equals("Samuel") & s1v.equals("123")) {
 					frame.setVisible(false);
 					new Exercicio2();
@@ -72,8 +73,7 @@ public class Exercicio1 {
 		};b1.addActionListener(acao);
 	}
 
-	public static void main(String[] args) {
-		
+	public static void main(String[] args) { 
 		new Exercicio1();
 	}
 
