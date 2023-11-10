@@ -8,10 +8,9 @@ import javax.swing.*;
 public class Exercicio2{
 	JLabel l1,l2,l3,l4;
 	JTextField c1,c2;
-	//JPasswordField s1;
 	JButton b1;
-	static JFrame frame;
-	static JPanel painel;
+	JFrame frame;
+	JPanel painel;
 	
 	public Exercicio2() { 
 		this.inicar();

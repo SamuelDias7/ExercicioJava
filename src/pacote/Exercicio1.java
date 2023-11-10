@@ -10,7 +10,7 @@ public class Exercicio1 {
 	JTextField c1;
 	JPasswordField s1;
 	JButton b1;
-	static JFrame frame;
+	JFrame frame;
 	
 	public Exercicio1() { 
 		this.iniciar();
@@ -75,7 +75,7 @@ public class Exercicio1 {
 	}
 	
 	public static void main(String[] args) { 
-		new Exercicio2();
+		new Exercicio1();
 	}
 	
 }

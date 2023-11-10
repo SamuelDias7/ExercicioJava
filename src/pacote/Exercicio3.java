@@ -13,10 +13,10 @@ public class Exercicio3 extends JFrame{
 	JLabel l1;
 	JLabel l2;
 	JButton b1,b2;
-	static JPanel painelimg;
-	static JPanel painel;
-	static String nomeV;
-	static String idadeV;
+	JPanel painelimg;
+	JPanel painel;
+	String nomeV;
+	String idadeV;
 	
 	public Exercicio3(String nome, String idade) {		
 		this.nomeV = nome;
